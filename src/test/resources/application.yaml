@@ -1,0 +1,16 @@
+spring:
+  main:
+    banner-mode: off
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: 7203312
+
+  liquibase:
+    enabled: false

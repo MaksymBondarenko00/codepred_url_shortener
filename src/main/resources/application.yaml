@@ -1,0 +1,17 @@
+spring:
+  main:
+    banner-mode: off
+
+  liquibase:
+    change-log: classpath:db/changelog/changelog-master.xml
+    drop-first: false
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_DB:shortener}
+    username: ${MYSQL_USER:root}
+    password: ${MYSQL_PASSWORD:loxy1517}
