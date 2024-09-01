@@ -1,10 +1,9 @@
-package com.cpr.codepred_url_shortener.controller.impl;
+package com.cpr.url_shortener.controller.impl;
 
-import com.cpr.codepred_url_shortener.controller.ShortenerController;
-
-import com.cpr.codepred_url_shortener.entity.Redirect;
-import com.cpr.codepred_url_shortener.request.ShortenerCreationRequest;
-import com.cpr.codepred_url_shortener.service.ShortenerService;
+import com.cpr.url_shortener.controller.ShortenerController;
+import com.cpr.url_shortener.entity.Redirect;
+import com.cpr.url_shortener.request.ShortenerCreationRequest;
+import com.cpr.url_shortener.service.ShortenerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

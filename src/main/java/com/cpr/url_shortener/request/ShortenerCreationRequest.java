@@ -1,4 +1,4 @@
-package com.cpr.codepred_url_shortener.request;
+package com.cpr.url_shortener.request;
 
 import lombok.*;
 

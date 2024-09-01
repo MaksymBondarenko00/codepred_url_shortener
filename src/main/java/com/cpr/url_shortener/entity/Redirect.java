@@ -1,4 +1,4 @@
-package com.cpr.codepred_url_shortener.entity;
+package com.cpr.url_shortener.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;

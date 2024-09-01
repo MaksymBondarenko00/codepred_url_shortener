@@ -1,6 +1,6 @@
-package com.cpr.codepred_url_shortener.repository;
+package com.cpr.url_shortener.repository;
 
-import com.cpr.codepred_url_shortener.entity.Redirect;
+import com.cpr.url_shortener.entity.Redirect;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

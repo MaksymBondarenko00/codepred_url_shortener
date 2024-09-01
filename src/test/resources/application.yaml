@@ -10,7 +10,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/test
     username: root
-    password: 7203312
+    password: Loxy1517.
 
   liquibase:
     enabled: false

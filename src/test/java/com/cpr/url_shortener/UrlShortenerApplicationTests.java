@@ -1,10 +1,10 @@
-package com.cpr.codepred_url_shortener;
+package com.cpr.url_shortener;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CodepredUrlShortenerApplicationTests {
+class UrlShortenerApplicationTests {
 
     @Test
     void contextLoads() {

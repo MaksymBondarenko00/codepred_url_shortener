@@ -1,11 +1,11 @@
-package com.cpr.codepred_url_shortener.service.impl;
+package com.cpr.url_shortener.service.impl;
 
-import com.cpr.codepred_url_shortener.entity.Redirect;
-import com.cpr.codepred_url_shortener.exception.AliasAlreadyExistException;
-import com.cpr.codepred_url_shortener.exception.AliasNotFoundException;
-import com.cpr.codepred_url_shortener.repository.ShortenerRepository;
-import com.cpr.codepred_url_shortener.request.ShortenerCreationRequest;
-import com.cpr.codepred_url_shortener.service.ShortenerService;
+import com.cpr.url_shortener.entity.Redirect;
+import com.cpr.url_shortener.exception.AliasAlreadyExistException;
+import com.cpr.url_shortener.exception.AliasNotFoundException;
+import com.cpr.url_shortener.repository.ShortenerRepository;
+import com.cpr.url_shortener.request.ShortenerCreationRequest;
+import com.cpr.url_shortener.service.ShortenerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
