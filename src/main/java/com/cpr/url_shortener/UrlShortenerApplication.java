@@ -1,13 +1,13 @@
-package com.cpr.codepred_url_shortener;
+package com.cpr.url_shortener;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CodepredUrlShortenerApplication {
+public class UrlShortenerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CodepredUrlShortenerApplication.class, args);
+        SpringApplication.run(UrlShortenerApplication.class, args);
     }
 
 }

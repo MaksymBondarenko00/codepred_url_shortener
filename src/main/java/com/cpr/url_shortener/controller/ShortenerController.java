@@ -1,7 +1,7 @@
-package com.cpr.codepred_url_shortener.controller;
+package com.cpr.url_shortener.controller;
 
-import com.cpr.codepred_url_shortener.entity.Redirect;
-import com.cpr.codepred_url_shortener.request.ShortenerCreationRequest;
+import com.cpr.url_shortener.entity.Redirect;
+import com.cpr.url_shortener.request.ShortenerCreationRequest;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
