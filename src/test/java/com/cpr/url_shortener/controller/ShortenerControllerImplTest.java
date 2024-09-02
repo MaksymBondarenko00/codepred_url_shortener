@@ -1,8 +1,8 @@
 package com.cpr.url_shortener.controller;
 
 import com.cpr.url_shortener.entity.Redirect;
-import com.cpr.url_shortener.exception.AliasAlreadyExistException;
-import com.cpr.url_shortener.exception.AliasNotFoundException;
+import com.cpr.url_shortener.exceptionHandler.exception.AliasAlreadyExistException;
+import com.cpr.url_shortener.exceptionHandler.exception.AliasNotFoundException;
 import com.cpr.url_shortener.request.ShortenerCreationRequest;
 import com.cpr.url_shortener.service.ShortenerService;
 import com.fasterxml.jackson.databind.ObjectMapper;

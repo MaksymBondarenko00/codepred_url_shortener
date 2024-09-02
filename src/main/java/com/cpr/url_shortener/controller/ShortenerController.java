@@ -30,9 +30,9 @@ public interface ShortenerController {
             responses = {
                     @ApiResponse(
                             responseCode = "200",
-                            description = "The apartment category details",
+                            description = "Redirect to the current link with your alias",
                             content = @Content(
-                                    mediaType = "application/json",
+                                    mediaType = "application/html",
                                     schema = @Schema(implementation = Redirect.class)
                             )
                     )

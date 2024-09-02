@@ -1,4 +1,4 @@
-package com.cpr.url_shortener.exception;
+package com.cpr.url_shortener.exceptionHandler.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
