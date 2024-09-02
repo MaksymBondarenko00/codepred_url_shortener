@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.cpr</groupId>
-    <artifactId>url_shortener_codepred</artifactId>
+    <artifactId>url_shortener</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>url_shortener_codepred</name>
-    <description>url_shortener_codepred</description>
+    <name>url_shortener</name>
+    <description>url_shortener</description>
     <url/>
     <licenses>
         <license/>
@@ -28,6 +28,8 @@
     </scm>
     <properties>
         <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
     <dependencies>
         <dependency>
@@ -50,10 +52,9 @@
             <version>3.3.3</version>
         </dependency>
         <dependency>
-            <groupId>org.hibernate</groupId>
+            <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-core</artifactId>
             <version>6.6.0.Final</version>
-            <type>pom</type>
         </dependency>
         <dependency>
             <groupId>org.liquibase</groupId>
