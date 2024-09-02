@@ -1,6 +1,8 @@
 package com.cpr.url_shortener.service;
 
 import com.cpr.url_shortener.entity.Redirect;
+import com.cpr.url_shortener.exception.AliasAlreadyExistException;
+import com.cpr.url_shortener.exception.AliasNotFoundException;
 import com.cpr.url_shortener.request.ShortenerCreationRequest;
 import com.cpr.url_shortener.service.impl.ShortenerServiceImpl;
 import org.junit.jupiter.api.Assertions;
@@ -23,7 +25,7 @@ public class ShortenerServiceImplTest {
     private ShortenerServiceImpl shortenerService;
 
     @Test
-    void reduce(){
+    void reduceTest() {
         ShortenerCreationRequest request = new ShortenerCreationRequest();
         request.setUrl("https://www.google.com");
         request.setAlias("ggl");
@@ -39,14 +41,39 @@ public class ShortenerServiceImplTest {
     }
 
     @Test
-    void getRedirect(){
+    void reduceNegativeTest() {
+        ShortenerCreationRequest request = new ShortenerCreationRequest();
+        request.setAlias("maven");
+
+        String expected = "This alias is already exist";
+        try {
+            shortenerService.reduce(request);
+        } catch (AliasAlreadyExistException e){
+            Assertions.assertEquals(expected, e.getMessage());
+        }
+    }
+
+    @Test
+    void getRedirectTest() {
         Redirect expected = get();
 
         Redirect actual = shortenerService.getRedirect(expected.getAlias());
         Assertions.assertEquals(expected, actual);
     }
 
-    private Redirect get(){
+    @Test
+    void getRedirectNegativeTest() {
+        String alias = "test";
+        String expected = "Alias with name: '" + alias + "' not found";
+
+        try {
+            shortenerService.getRedirect(alias);
+        } catch (AliasNotFoundException e){
+            Assertions.assertEquals(expected, e.getMessage());
+        }
+    }
+
+    private static Redirect get() {
         Redirect redirect = new Redirect();
         redirect.setUrl("https://mvnrepository.com/");
         redirect.setAlias("maven");
