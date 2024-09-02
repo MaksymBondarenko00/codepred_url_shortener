@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   shortener:
-    image: maksymbondarenko00/url_shortener
+    image: maksymbondarenko00/shortener
     ports:
       - "8080:8080"
     environment:
