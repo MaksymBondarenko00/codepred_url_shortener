@@ -12,6 +12,6 @@ spring:
     open-in-view: false
 
   datasource:
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_DB:shortener}
-    username: ${MYSQL_USER:root}
-    password: ${MYSQL_PASSWORD:Loxy1517.}
+    url: jdbc:mysql://localhost:3306/shortener
+    username: root
+    password: Loxy1517.

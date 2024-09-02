@@ -1,4 +1,4 @@
 FROM openjdk:17
-
-ENTRYPOINT ["java","-jar","/shortener.jar"]
+COPY target/url_shortener-0.0.1-SNAPSHOT.jar app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
 EXPOSE 8080
