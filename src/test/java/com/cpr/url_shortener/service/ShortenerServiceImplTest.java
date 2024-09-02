@@ -1,8 +1,8 @@
 package com.cpr.url_shortener.service;
 
 import com.cpr.url_shortener.entity.Redirect;
-import com.cpr.url_shortener.exception.AliasAlreadyExistException;
-import com.cpr.url_shortener.exception.AliasNotFoundException;
+import com.cpr.url_shortener.exceptionHandler.exception.AliasAlreadyExistException;
+import com.cpr.url_shortener.exceptionHandler.exception.AliasNotFoundException;
 import com.cpr.url_shortener.request.ShortenerCreationRequest;
 import com.cpr.url_shortener.service.impl.ShortenerServiceImpl;
 import org.junit.jupiter.api.Assertions;
@@ -45,10 +45,10 @@ public class ShortenerServiceImplTest {
         ShortenerCreationRequest request = new ShortenerCreationRequest();
         request.setAlias("maven");
 
-        String expected = "This alias is already exist";
+        String expected = "Alias with this name already exists";
         try {
             shortenerService.reduce(request);
-        } catch (AliasAlreadyExistException e){
+        } catch (RuntimeException e){
             Assertions.assertEquals(expected, e.getMessage());
         }
     }
@@ -64,7 +64,7 @@ public class ShortenerServiceImplTest {
     @Test
     void getRedirectNegativeTest() {
         String alias = "test";
-        String expected = "Alias with name: '" + alias + "' not found";
+        String expected = "Alias Not Found";
 
         try {
             shortenerService.getRedirect(alias);
